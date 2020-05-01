@@ -12,9 +12,10 @@ img{
 }
 .demo-one .galley-item img{
   
-   height: 300px;
+   height: 200px;
    overflow: hidden;
    object-fit: cover;
+   margin: 13px 0;
 }
 
 

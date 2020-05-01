@@ -16,3 +16,26 @@ img{
    overflow: hidden;
    object-fit: cover;
 }
+
+
+/*
+gallery-menu
+--------------------*/
+
+.gallery-menu{
+
+ 
+	text-align: center;
+	padding: 25px;
+}
+
+.gallery-menu button{
+	padding: 8px 20px;
+	border-radius: 6px;
+	color: white;
+	background-color: black;
+}
+
+.gallery-menu button:hover{
+	color: #ddd;
+}

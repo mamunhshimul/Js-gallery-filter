@@ -1,42 +1,72 @@
-h1,h2,h3,h4,h5,h6,p{
-  margin: 0;
-  padding: 0;
-}
-img{
-	width: 100%;
-}
-
-
-.demo-one .galley-item {
-
-}
-.demo-one .galley-item img{
-  
-   height: 200px;
-   overflow: hidden;
-   object-fit: cover;
-   margin: 13px 0;
-}
-
-
-/*
-gallery-menu
---------------------*/
-
-.gallery-menu{
-
  
-	text-align: center;
-	padding: 25px;
+* {
+  box-sizing: border-box;
 }
 
-.gallery-menu button{
-	padding: 8px 20px;
-	border-radius: 6px;
-	color: white;
-	background-color: black;
+body { 
+  padding: 20px; 
 }
 
-.gallery-menu button:hover{
-	color: #ddd;
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
 }

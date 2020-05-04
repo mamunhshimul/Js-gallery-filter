@@ -3,22 +3,19 @@
 
 
 
-filterSelection("all") //  show all item for defult 
+ 
+filterSelection("all")
 function filterSelection(c) {
-  var g_item, i;
-  g_item = document.querySelector(".gallery-item");
+  var x, i;
+  x = document.getElementsByClassName("column");
   if (c == "all") c = "";
-
-   for (i = 0; i < x.length; i++) {
-    g_RemoveClass(g_item[i], "show");
-    if (g_item[i].className.indexOf(c) > -1) g_AddClass(g_item[i], "show");
+  for (i = 0; i < x.length; i++) {
+    jsGallerHide(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) jsGallery_add(x[i], "show");
   }
 }
 
-
-
-
-function g_AddClass(element, name) {
+function jsGallery_add(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -27,7 +24,7 @@ function g_AddClass(element, name) {
   }
 }
 
-function g_RemoveClass(element, name) {
+function jsGallerHide(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -37,4 +34,22 @@ function g_RemoveClass(element, name) {
     }
   }
   element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }

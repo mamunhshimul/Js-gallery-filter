@@ -7,7 +7,7 @@
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
-  x = document.getElementsByClassName("column");
+  x = document.getElementsByClassName("jsGaFilter");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     jsGallerHide(x[i], "show");

@@ -52,3 +52,140 @@ h1 {
   box-shadow: 0px 0px 1px black!important; 
   border: none;
 }
+
+/*---------lite box*/
+
+.JsGa_litebox {
+  border-top-left-radius: 50px solid black;
+}
+
+.JsGa_litebox.row > .column {
+  padding: 0 8px;
+}
+
+.JsGa_litebox.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.JsGa_litebox .column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.JsGa_litebox .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.JsGa_litebox .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.JsGa_litebox .close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.JsGa_litebox .close:hover,
+.JsGa_litebox .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.JsGa_litebox .mySlides {
+  display: none;
+}
+
+.JsGa_litebox .cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.JsGa_litebox .prev,
+.JsGa_litebox .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.JsGa_litebox .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.JsGa_litebox .prev:hover,
+.JsGa_litebox .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.JsGa_litebox .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.JsGa_litebox  img {
+  margin-bottom: -4px;
+}
+
+.JsGa_litebox  .caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.JsGa_litebox .demo {
+  opacity: 0.6;
+}
+
+.JsGa_litebox  .active,
+.JsGa_litebox  .demo:hover {
+  opacity: 1;
+}
+
+.JsGa_litebox img.hover-shadow {
+  transition: 0.3s;
+}
+
+.JsGa_litebox .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

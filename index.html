@@ -31,25 +31,25 @@
 
   <div class="col-md-4 p-1">
    <div class="jsGaFilter Morning"> 
-      <img src="assets/images/morning/moring_1.jpg" alt="image" alt="Morning">  
+      <img src="assets/images/morning/moring_1.jpg" alt="image" alt="Morning" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">  
     </div> 
   </div> 
   
   <div class="col-md-4 p-1">
    <div class="jsGaFilter Morning"> 
-      <img src="assets/images/morning/moring_2.jpg" alt="image" alt="Morning">  
+      <img src="assets/images/morning/moring_2.jpg" alt="image" alt="Morning"onclick="openModal();currentSlide(2)" class="hover-shadow cursor">  
     </div> 
   </div> 
   
   <div class="col-md-4 p-1">
    <div class="jsGaFilter Morning"> 
-      <img src="assets/images/morning/moring_3.jpg" alt="image" alt="Morning">  
+      <img src="assets/images/morning/moring_3.jpg" alt="image" alt="Morning"onclick="openModal();currentSlide(3)" class="hover-shadow cursor">  
     </div> 
   </div>  
   
   <div class="col-md-4 p-1">
    <div class="jsGaFilter Morning"> 
-      <img src="assets/images/morning/moring_4.jpg" alt="image" alt="Morning">  
+      <img src="assets/images/morning/moring_4.jpg" alt="image" alt="Morning"onclick="openModal();currentSlide(4)" class="hover-shadow cursor">  
     </div> 
   </div>  
   
@@ -166,16 +166,66 @@
       <img src="assets/images/night/night_5.jpg" alt="image" alt="Evening"> 
   </div> 
 </div>
-   
- 
-  
- 
- 
-<!-- END GRID -->
+    
 </div>
 
 <!-- END MAIN -->
 </div>
+</section>
+<section class="JsGa_litebox">
+
+   
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="assets/images/afternoon/afternoon_2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="assets/images/afternoon/afternoon_4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="assets/images/afternoon/afternoon_5.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="assets/images/afternoon/afternoon_1.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+<div class="row">
+      <div class="column col-md-4">
+      <img class="demo cursor" src="assets/images/afternoon/afternoon_2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column col-md-4">
+      <img class="demo cursor" src="assets/images/afternoon/afternoon_4.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column col-md-4">
+      <img class="demo cursor" src="assets/images/afternoon/afternoon_5.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column col-md-4">
+      <img class="demo cursor" src="assets/images/afternoon/afternoon_6.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+</div>
+
+  </div>
+</div>
+  
 </section>
 
 </body>
